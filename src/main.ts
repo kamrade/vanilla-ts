@@ -1,5 +1,9 @@
 import { log } from './helpers/log';
 import './css/style.css'
+import { mappedTypes, unityTypes } from './modules';
+
+// mappedTypes();
+unityTypes();
 
 const app = document.querySelector<HTMLDivElement>('#app');
 log(app, 'Some inner text 1');
