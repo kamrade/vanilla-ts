@@ -12,7 +12,7 @@
  *  Exclude<T,U>      - exclude from type T all properties from type U
  *  Extract<T,U>      - extract from type T only the properties existing in type U
  *  NonNullable<T>    - takes one generic parameter which should be a union type and return the same type but without null and undefined
- *  ReturnType<T>
+ *  ReturnType<T>     - T - type definition of a function.
  *  InstanceType<T>
  *  Required<T>
  *  ThisType<T>
@@ -92,6 +92,12 @@ function nonNullanle() {
     console.log('Non nullable:', `Paint starship #${id} with ${color} color`);
   }
   paintStarship(1, 'blue'); // - can't get undefined color
+}
+
+
+// RETURN TYPE
+function returnTupe() {
+  
 }
 
 

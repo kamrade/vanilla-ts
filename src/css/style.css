@@ -31,6 +31,7 @@ body {
 
 #app {
   padding-top: 1rem;
+  padding-bottom: 6rem;
 }
 
 .container {
@@ -42,29 +43,29 @@ body {
   position: relative;
 }
 
-.log:last-of-type::after {
-  content: '';
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  transform: translateY(4px);
-  width: 12px;
-  height: 20px;
-  background-color: white;
-  animation: .25s linear 0s infinite blinking;
+/* User Input */
+
+.user-input {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.95);
+  border-radius: 10px;
 }
 
-@keyframes blinking {
-  0% {
-    opacity: 1
-  }
-  20% {
-    opacity: 0
-  }
-  60% {
-    opacity: 1
-  }
-  100% {
-    opacity: 1
-  }
+.user-input .user-input-el {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.user-input .user-input-el:focus {
+  outline: none;
+  border: none;
 }
